@@ -25,8 +25,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 10;
-    border-bottom: 5px solid;
-    border-image: linear-gradient(to right, #E6E6FA, #BC8F8F, #E6E6FA ) 47% 0;
+    border-bottom: 5px solid #6C606C;
 }
 
 footer{
@@ -35,14 +34,14 @@ footer{
 
 .footer_high{
     height: 240px;
-    background: #D8BFD8;
+    background: #c2acc2;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: Amatic SC, cursive;
-    border-bottom: 5px solid lavender;
-    border-top: 5px solid lavender;
+    border-bottom: 5px solid #6C606C;
+    border-top: 5px solid #6C606C;
 }
 
 .footer_high h3{
@@ -68,7 +67,7 @@ footer{
 
 .footer_bottom{
     height: 70px;
-    background: rgb(172, 151, 181);
+    background: 	#978697;
       display: flex;
   align-items: center;
     justify-content: center;
@@ -373,7 +372,7 @@ label #cancel{
     max-width: 650px;
     margin: 0 auto;
     height: 100%;
-    border: 5px dashed white;
+    border: 8px ridge #FFF0F5;
     background: #FFE4E1	;
 }
 
