@@ -18,6 +18,7 @@ body{
      background: rgb(248, 232, 243);
 }
 
+
 header{
     width: 100%;
     height: 150px;
@@ -32,7 +33,7 @@ footer{
     width: 100%;
 }
 
-.footer_high{
+.footer__top{
     height: 240px;
     background: #c2acc2;
     margin: 0 auto;
@@ -44,12 +45,12 @@ footer{
     border-top: 5px solid #6C606C;
 }
 
-.footer_high h3{
+.footer__top h3{
     font-size: 35px;
     text-align: center;
 }
 
-.footer_high h5{
+.footer__top h5{
     font-size: 25px;
 }
 
@@ -65,7 +66,7 @@ footer{
     padding-left: 100px;
 }
 
-.footer_bottom{
+.footer__bottom{
     height: 70px;
     background: 	#978697;
       display: flex;
@@ -73,7 +74,7 @@ footer{
     justify-content: center;
 }
 
-.footer_bottom p {
+.footer__bottom p {
     margin: 0;
     font-family: Amatic SC, cursive;
     font-size: 25px;
@@ -206,7 +207,7 @@ label #cancel{
     margin: 0 auto;
 }
 
-.container_img, .container_img_1, .container_img_2{
+.container__img, .container__img_1, .container__img_2{
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -215,38 +216,44 @@ label #cancel{
     margin-bottom: 60px;
 }
 
-.container_img h2, .container_img_1 h2, .container_img_2 h2{
+.container__img h2, .container__img_1 h2, .container__img_2 h2{
     font-family: Amatic SC, cursive;
     font-size: 28px;
     margin-top: 10px;
     text-align: center;
 }
 
-.container_img img{
+.container__img img{
     border: 5px solid rgb(233, 194, 221);
     border-radius: 50%;
     padding: 10px;
 }
 
-.container_img_1 img{
+.container__img_1 img{
     border: 5px solid #B0E0E6;
     border-radius: 50%;
     padding: 10px;
 }
 
-.container_img_2 img{
+.container__img_2 img{
     border: 5px solid #B0C4DE;
     border-radius: 50%;
     padding: 10px;
 }
 
-.container_img1{
+.container__img1{
     width: 100%;
     max-width: 100px;
 }
 
 .container_4{
     background: #F5FFFA;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.container_19{
+    background: #FFF5EE;
     width: 100%;
     padding-bottom: 60px;
 }
@@ -258,7 +265,7 @@ label #cancel{
 }
 
 
-.container_4 h1, .container_8 h1, .container_10 h1, .container_15 h1{
+.container_4 h1, .container_8 h1, .container_10 h1, .container_15 h1, .container_19 h1{
     font-family: Amatic SC, cursive;
     font-size: 60px;
     padding-top: 80px;
