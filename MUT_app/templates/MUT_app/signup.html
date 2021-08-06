@@ -1,0 +1,41 @@
+{% extends 'MUT_app/layout.html' %}
+{% block content %}
+    <div class="container_21">
+    <div class="container_20">
+        {% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-danger">
+            <strong>{{ error|escape }}</strong>
+        </div>
+    {% endfor %}
+{% endif %}
+<div class="header-bar">
+<h1>Регистрация</h1>
+  </div>
+<div class="card-body">
+<form method="post">
+  {% csrf_token %}
+  <label>{{ form.username.label }}</label>
+  {{ form.username }}
+  <label>{{ form.password1.label }}</label>
+  {{ form.password1 }}
+    <label>{{ form.password2.label }}</label>
+  {{ form.password2 }}
+    <br>
+  <input class="button" type="submit" value="Создать аккаунт">
+
+</form>
+     <div class="change_link">
+  <p>Уже есть аккаунт? <a href="{% url 'login' %}">Войти</a></p>
+     </div>
+  </div>
+    </div>
+    </div>
+{% endblock content %}

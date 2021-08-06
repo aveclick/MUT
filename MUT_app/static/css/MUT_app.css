@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet');
+
+input {
+    outline:none;
+padding: 0 10px;
+}
+
+input:focus{
+    outline: 3px solid thistle;
+}
 
 *{
     margin: 0;
@@ -34,6 +42,7 @@ footer{
 }
 
 .footer__top{
+    padding: 10px;
     height: 240px;
     background: #c2acc2;
     margin: 0 auto;
@@ -59,11 +68,14 @@ footer{
     justify-content: space-around;
 }
 
+#col1, #col3{
+    padding: 20px;
+}
+
 #col2{
     border-right: 1px solid white;
-    padding-right: 100px;
+    padding: 0 100px;
     border-left: 1px solid white;
-    padding-left: 100px;
 }
 
 .footer__bottom{
@@ -81,9 +93,10 @@ footer{
 }
 
 .header__img{
-            display:flex;
-    justify-content: center; /*центрируем элемент по горизонтали */
-    align-items: center; /* и вертикали */
+   margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
 }
 
 .sidebar{
@@ -265,7 +278,7 @@ label #cancel{
 }
 
 
-.container_4 h1, .container_8 h1, .container_10 h1, .container_15 h1, .container_19 h1{
+.container_4 h1, .container_8 h1, .container_10 h1, .container_15 h1, .container_19 h1, .container_22 h1, .container_25 h1, .container_27 h1{
     font-family: Amatic SC, cursive;
     font-size: 60px;
     padding-top: 80px;
@@ -357,7 +370,7 @@ label #cancel{
     padding: 60px 0;
 }
 
-.container_8 p, .container_10 p{
+.container_8 p, .container_10 p, .container_22 p, .container_27 p{
     font-family: Amatic SC, cursive;
     text-align: center;
     padding: 0 40px 60px;
@@ -422,15 +435,14 @@ label #cancel{
 }
 
 button{
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     margin-bottom: 60px;
-    padding: 10px;
+    padding: 5px 20px;
     background: #B0C4DE;
     border: 3px solid #4682B4;
     transition: 0.5s;
@@ -440,13 +452,14 @@ button{
       background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
      background-size: 200% auto;
     color: white;
-    text-transform: uppercase;
+
 }
 
 
 button:hover{
      background-position: right center;
 }
+
 
 #toTop {
     position: fixed;
@@ -491,6 +504,266 @@ button:hover{
     right: calc(2%);
 }
 
+
+.container_20
+{
+    max-width: 550px;
+    margin: 40px auto;
+    background-color: #FFF0F5;
+}
+
+.container_21
+{
+    margin-top: 150px;
+    padding: 60px 10px;
+}
+
+.container_20 label{
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    padding: 15px 0!important;
+    display: block;
+}
+
+.container_20 input{
+    margin-bottom: 10px;
+}
+
+.header-bar
+{
+    font-family: Amatic SC, cursive;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(to right, #BE93C5, #7BC6CC);
+}
+
+.header-bar h1{
+    font-size: 48px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.container_20 form{
+    text-align: center;
+}
+
+.container_20 a{
+    text-decoration: none;
+    color: #6c606c;
+}
+
+.container_20 a:hover{
+    text-decoration: none;
+    color: midnightblue;
+}
+
+.container_20 p{
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+
+.change_link p{
+    margin-top: 20px;
+}
+
+.button{
+    background: thistle;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid #978697;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.button:hover{
+    background: #B0C4DE	;
+}
+
+.container_22{
+    background: url("../img/gummy.jpg") 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.container_23{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    height: 100%;
+    border: 8px ridge #B0C4DE;
+    background: #F0F8FF	;
+}
+
+.container_24{
+    background: url("../img/hearts.jpg") 0 0 no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.container_25{
+    background: linear-gradient(#D3CCE3, #E9E4F0);
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.container_26{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+}
+
+.container_26 a{
+    text-decoration: none;
+    color: #483D8B;
+}
+
+.container_26 a:hover{
+    text-decoration: none;
+    color: #4B0082;
+}
+
+.container_26 h5{
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+
+.container_26 p{
+    font-size: 20px;
+}
+
+.container_26 .img-fluid{
+    height: 100%;
+}
+
+.container_26 .text-muted{
+    font-size: 16px;
+}
+
+.container_27{
+    background: #F5FFFA;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.container_28{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+
+
+.container_29{
+    background: #F0F8FF;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.comments_container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.comments_container h4{
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.comments_container h5{
+    font-family: 'Amatic SC', cursive;
+    font-size: 23px;
+    color: gray;
+}
+
+.comments_container p{
+    font-family: Amatic SC, cursive;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+
+.one_str{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    border: 1px solid black;
+}
+
+.comments_container h1, .comments_container__add h1{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+
+.comments_container h3{
+    font-family: Amatic SC, cursive;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+
+.comments_container__add{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 30px;
+}
+
+.comments_container__add label{
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    padding: 15px 20px!important;
+    display: flex;
+}
+
+.comments_container__add input#id_name, input#id_username, input#id_password, input#id_password2, input#id_password1 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.comments_container__add input#id_name{
+    margin-left: 78px;
+}
+
+input{
+    min-height: 30px;
+}
+
+.comments_container__add textarea{
+    padding: 15px;
+}
+
+input, optgroup, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+    line-height: normal;
+    font-size: 20px;
+}
+
 @media(max-width: 1000px){
     .sidebar{
         height: auto;
@@ -526,5 +799,50 @@ button:hover{
     .sidebar a:hover span{
         opacity: 1;
         visibility: visible;
+    }
+}
+
+@media(max-width:930px){
+    .footer__top{
+        display: block;
+        height: auto;
+    }
+
+    #col1, #col3 {
+    text-align: center;
+}
+    #col1, #col2, #col3{
+         margin-bottom: 20px;
+    }
+
+    .icons{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        max-width: 100px;
+    }
+
+    #col1{
+        margin-top: 20px;
+    }
+
+    #col2{
+        border: none;
+    }
+}
+
+@media(max-width:600px){
+
+    .one_str{
+        display: block;
+    }
+
+    .comments_container__add input#id_name {
+        margin-left: 0;
+    }
+
+    .comments_container__add label {
+        text-align: center;
+        display: block;
     }
 }
