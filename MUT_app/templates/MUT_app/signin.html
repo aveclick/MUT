@@ -1,21 +1,21 @@
 {% extends 'MUT_app/layout.html' %}
 {% block content %}
-<div class="container_21">
-<div class="container_20">
-<div class="header-bar">
-<h1>Вход</h1>
-  </div>
-<div class="card-body">
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input class="button" type="submit" value="Войти">
+    <div class="container_21">
+        <div class="container_20">
+            <div class="header-bar">
+                <h1>Вход</h1>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input class="button" type="submit" value="Войти">
 
-</form>
-    <div class="change_link">
-  <p>Нет аккаунта? <a href="{% url 'register' %}">Создать аккаунт</a></p>
+                </form>
+                <div class="change_link">
+                    <p>Нет аккаунта? <a href="{% url 'register' %}">Создать аккаунт</a></p>
+                </div>
+            </div>
         </div>
-  </div>
-</div>
     </div>
 {% endblock content %}

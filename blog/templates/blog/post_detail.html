@@ -1,44 +1,44 @@
 {% extends 'MUT_app/layout.html' %}
 {% block content %}
     <div class="container_0">
-    <div class="container_27">
-    <div class="container_28">
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.body|safe }}</p>
-    </div>
-    </div>
+        <div class="container_27">
+            <div class="container_28">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.body|safe }}</p>
+            </div>
+        </div>
     </div>
     <div class="container_29">
-    <div class="comments_container">
-        <h1>Комментарии</h1>
-        {% for comment in post.comments.all %}
-            <div class="one_str">
-        <h4>{{ comment.name }}</h4>
-            <h5>{{ comment.date_added }}</h5>
-            </div>
-            <p>{{ comment.body }}</p>
-
-        {% empty %}
-        <h3>Пока к этой записи нет комментариев, будь первым!</h3>
-        {% endfor %}
-      </div>
-    </div>
-<div class="container_27">
-    <div class="comments_container__add">
-        <h1>Добавить комментарий</h1>
-        <form method="post">
-            {% csrf_token %}
-            <div class="one_str">
-            <label>{{ form.name.label }}</label>
-            {{ form.name }}
+        <div class="comments_container">
+            <h1>Комментарии</h1>
+            {% for comment in post.comments.all %}
+                <div class="one_str">
+                    <h4>{{ comment.name }}</h4>
+                    <h5>{{ comment.date_added }}</h5>
                 </div>
-            <div class="one_str">
-            <label>{{ form.body.label }}</label>
-            {{ form.body }}
-            </div>
-            <br>
-            <button type="submit">Добавить</button>
-        </form>
+                <p>{{ comment.body }}</p>
+
+            {% empty %}
+                <h3>Пока к этой записи нет комментариев, будь первым!</h3>
+            {% endfor %}
+        </div>
     </div>
-</div>
+    <div class="container_27">
+        <div class="comments_container__add">
+            <h1>Добавить комментарий</h1>
+            <form method="post">
+                {% csrf_token %}
+                <div class="one_str">
+                    <label>{{ form.name.label }}</label>
+                    {{ form.name }}
+                </div>
+                <div class="one_str">
+                    <label>{{ form.body.label }}</label>
+                    {{ form.body }}
+                </div>
+                <br>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}
