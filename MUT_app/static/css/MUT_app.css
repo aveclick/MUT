@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet');
 
+.change_background{
+    opacity: 0.6;
+}
+
+.one_str_elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn_header_closed{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#btn_header_closed.open{
+    padding-left: 150px;
+    visibility: visible;
+    opacity: 1;
+}
+
 input {
     outline:none;
     padding: 0 10px;
@@ -102,7 +123,7 @@ footer{
 }
 
 
-.menu {
+.menu{
     top: 0;
     visibility: hidden;
     opacity: 0;
@@ -112,7 +133,7 @@ footer{
     background: #BC8F8F;
 }
 .menu.open {
-    transition: .2s visibility linear, .2s opacity linear;
+    transition: .3s visibility linear, .3s opacity linear;
     visibility: visible;
     opacity: 1;
 }
@@ -164,8 +185,12 @@ footer{
     color: black;
     font-size: 25px;
     border-radius: 5px;
-    margin: 30px 120px;
-    transition: all .5s ease;
+    margin: 0 0 0 120px;
+}
+
+#btn_header.close {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .container_0{
@@ -327,7 +352,7 @@ footer{
 
 .container_sweetbox__content{
     width: 100%;
-    max-width: 575px;
+    max-width: 475px;
     margin: 0 auto;
 }
 
@@ -417,29 +442,22 @@ footer{
 }
 
 button{
-    font-weight: bold;
+    background: thistle;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid #978697;
+    margin-top: 15px;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 60px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    margin-bottom: 60px;
-    padding: 5px 20px;
-    background: #B0C4DE;
-    border: 3px solid #4682B4;
-    transition: 0.5s;
-    background: #B0C4DE;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    background-size: 200% auto;
-    color: white;
-
 }
 
 
 button:hover{
-    background-position: right center;
+    background: #B0C4DE;
 }
 
 
@@ -721,14 +739,15 @@ input, textarea{
     display: flex;
 }
 
-.container_comments__add input#id_name, input#id_username, input#id_password, input#id_password2, input#id_password1 {
+input#id_username, input#id_password, input#id_password2, input#id_password1 {
     margin: 0 auto;
     width: 100%;
     max-width: 300px;
-
 }
 
 .container_comments__add input#id_name{
+    margin: 0 auto;
+    width: 100%;
     margin-left: 78px;
 }
 
@@ -747,6 +766,12 @@ input, optgroup, select, textarea {
 }
 
 @media(max-width: 1000px){
+
+    #btn_header
+    {
+        margin: 0 0 0 60px;
+    }
+
     .menu{
         height: auto;
         width: 70px;
@@ -763,13 +788,12 @@ input, optgroup, select, textarea {
     .menu a i{
         margin-left: -10px;
     }
-    a:hover{
-        width: 200px;
-        background: inherit;
-    }
-    .menu a:hover span{
-        opacity: 1;
-        visibility: visible;
+
+    #btn_header_closed.open{
+        padding-left: 0;
+        visibility: hidden;
+        opacity: 0;
+        display: none;
     }
 }
 
@@ -804,12 +828,22 @@ input, optgroup, select, textarea {
 
 @media(max-width:600px){
 
+    #btn_header
+    {
+        margin: 0 0 0 40px;
+    }
+
     .one_str{
         display: block;
     }
 
     .container_comments__add input#id_name {
         margin-left: 0;
+    }
+
+    textarea{
+        margin: 0 auto;
+        width: 100%;
     }
 
     .container_comments__add label {

@@ -63,39 +63,143 @@
     <script>
         window.onload=function() {
 
-    const btnMenu = document.querySelector('#btn_header');
-    const menu = document.querySelector('.menu');
-    const toggleMenu = function () {
-        menu.classList.toggle('open');
-    }
+            const btnMenu = document.querySelector('#btn_header');
+            const btnMenuclose = document.querySelector('#btn_header_closed');
+            const menu = document.querySelector('.menu');
+            const toggleMenu = function () {
+                menu.classList.toggle('open');
+                btnMenuclose.classList.toggle('open');
+                btnMenu.classList.toggle('close');
 
-    btnMenu.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleMenu();
-    });
+                const footer1 = document.querySelector('.footer__top')
+                const footer2 = document.querySelector('.footer__bottom')
 
-    document.addEventListener('click', function (e) {
-        const target = e.target;
-        const its_menu = target == menu || menu.contains(target);
-        const its_btnMenu = target == btnMenu;
-        const menu_is_active = menu.classList.contains('open');
+                const goods1 = document.querySelector('.container_goods__1')
+                const goods2 = document.querySelector('.container_goods__2')
+                const deserts = document.querySelector('.container_deserts__img')
+                const fixedimg1 =  document.querySelector('.container_home_middle_fixed_img')
+                const fixedimg2 = document.querySelector('.container_home_bottom_fixed_img')
+                const sweetbox =  document.querySelector('.container_sweetbox__img')
+                const party = document.querySelector('.container_party__img')
+                if (goods1) {
+                    goods1.classList.toggle('change_background');
+                    goods2.classList.toggle('change_background');
+                    deserts.classList.toggle('change_background');
+                    fixedimg1.classList.toggle('change_background');
+                    fixedimg2.classList.toggle('change_background');
+                    sweetbox.classList.toggle('change_background');
+                    party.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
 
-        if (!its_menu && !its_btnMenu && menu_is_active) {
-            toggleMenu();
+
+                const about = document.querySelector('.container_about__img');
+                const fixedimg3 = document.querySelector('.container_about_middle_fixed_img');
+                const goals = document.querySelector('.container_goals__img');
+                const fixedimg4 =  document.querySelector('.container_about_bottom_fixed_img');
+                if (about) {
+                    about.classList.toggle('change_background');
+                    fixedimg3.classList.toggle('change_background');
+                    goals.classList.toggle('change_background');
+                    fixedimg4.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+
+
+                const catalog = document.querySelector('.container_catalog');
+                if (catalog) {
+                    catalog.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+
+
+                const signin = document.querySelector('.container_signin');
+                if (signin) {
+                    signin.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+
+
+                const signup = document.querySelector('.container_signup');
+                if (signup) {
+                    signup.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+
+                const blog = document.querySelector('.container_blog');
+                if (blog) {
+                    blog.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+
+
+                const profile = document.querySelector('.container_profile');
+                const fixedimg5 = document.querySelector('.container_profile_fixed_img');
+                if (profile) {
+                    profile.classList.toggle('change_background');
+                    fixedimg5.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+
+                const post = document.querySelector('.container_post');
+                const comments = document.querySelector('.container_comments__content');
+                const comment = document.querySelector('.container_comments__add');
+                if (post) {
+                    post.classList.toggle('change_background');
+                    comments.classList.toggle('change_background');
+                    comment.classList.toggle('change_background');
+                    footer1.classList.toggle('change_background');
+                    footer2.classList.toggle('change_background');
+                }
+            }
+
+            btnMenu.addEventListener('click', function (e) {
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+
+            document.addEventListener('click', function (e) {
+                const target = e.target;
+                const its_menu = target == menu || menu.contains(target);
+                const its_btnMenu = target == btnMenu;
+                const menu_is_active = menu.classList.contains('open');
+
+                if (!its_menu && !its_btnMenu && menu_is_active) {
+                    toggleMenu();
+                }
+            });
+
+            btnMenuclose.addEventListener('click', function (e) {
+                const menu_is_active = menu.classList.contains('open');
+
+                if (menu_is_active) {
+                    toggleMenu();
+                }
+            });
         }
-    });
-}
     </script>
 </head>
 <body>
 <header>
-
-       <i class="fas fa-bars" id="btn_header"><span style="margin-left: 10px; font-family: Montserrat, sans-serif;
+    <div id="btn_header">
+        <i class="fas fa-bars"><span style="margin-left: 10px; font-family: Montserrat, sans-serif;
 ">Меню</span> </i>
-
-
+    </div>
     <div class="menu">
-        <h1>Меню</h1>
+        <div class="one_str_elements">
+            <h1>Меню</h1>
+            <div id="btn_header_closed">
+                <i class="fa fa-times fa-lg" style="color:lavender"></i>
+            </div>
+        </div>
         {% if request.user.is_authenticated %}
             <a href="{% url 'logout' %}"><i class="fa fa-lock"></i><span>Выйти</span></a>
         {% else %}
@@ -118,10 +222,8 @@
         <a href="/"><img src="{% static 'img/logo.png' %}" width="220" height="100" alt="logo"></a>
     </div>
 </header>
-<div id="container_0">
 {% block content %}
 {% endblock %}
-</div>
 <footer>
     <div class="footer__top">
         <div id="footer__top__col1"><h3>Время работы</h3>
