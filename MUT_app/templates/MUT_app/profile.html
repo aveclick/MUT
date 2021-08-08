@@ -1,14 +1,16 @@
 {% extends 'MUT_app/layout.html' %}
 {% block content %}
     <div class="container_0">
-        <div class="container_22">
-            <div class="container_23">
+        <div class="container_profile">
+            <div class="container_profile__content">
                 <h1>Профиль</h1>
                 <p>Рады видеть Вас в нашем дружном сообществе, {{ request.user|title }}! Теперь Вы можете участвовать в
                     обсуждениях в нашем блоге!</p>
+                <form action="/blog">
                 <button>Перейти в блог &#8594;</button>
+                </form>
             </div>
         </div>
-        <div class="container_24"></div>
+        <div class="container_profile_fixed_img"></div>
     </div>
 {% endblock content %}

@@ -63,16 +63,16 @@ footer{
     font-size: 25px;
 }
 
-.icons{
+.footer__icons{
     display: flex;
     justify-content: space-around;
 }
 
-#col1, #col3{
+#footer__top__col1, #footer__top__col3{
     padding: 20px;
 }
 
-#col2{
+#footer__top__col2{
     border-right: 1px solid white;
     padding: 0 100px;
     border-left: 1px solid white;
@@ -190,14 +190,14 @@ label #cancel{
     margin-top: 150px;
 }
 
-.container_1{
+.container_deserts__img{
     background: url("../img/cake.jpg") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_1 h1{
+.container_deserts__img h1{
     font-family: Amatic SC, cursive;
     text-align: center;
     padding-top: 80px;
@@ -205,7 +205,7 @@ label #cancel{
     margin-bottom: 70px;
 }
 
-.container_2{
+.container_deserts{
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -214,7 +214,7 @@ label #cancel{
     border: 8px ridge #D8BFD8;
 }
 
-.container_3{
+.container_deserts__content, .container_goals__content{
     width: 100%;
     max-width: 475px;
     margin: 0 auto;
@@ -259,26 +259,26 @@ label #cancel{
     max-width: 100px;
 }
 
-.container_4{
+.container_goods__1{
     background: #F5FFFA;
     width: 100%;
     padding-bottom: 60px;
 }
 
-.container_19{
+.container_catalog{
     background: #FFF5EE;
     width: 100%;
     padding-bottom: 60px;
 }
 
-.container_15{
+.container_goods__2{
     background: #F8F8FF;
     width: 100%;
     padding-bottom: 60px;
 }
 
 
-.container_4 h1, .container_8 h1, .container_10 h1, .container_15 h1, .container_19 h1, .container_22 h1, .container_25 h1, .container_27 h1{
+.container_goods__1 h1, .container_party__img h1, .container_about__img h1, .container_goods__2 h1, .container_catalog h1, .container_profile h1, .container_blog h1, .container_post h1{
     font-family: Amatic SC, cursive;
     font-size: 60px;
     padding-top: 80px;
@@ -319,14 +319,14 @@ label #cancel{
     transform: scale(1.1); /* Увеличиваем масштаб */
 }
 
-.container_5{
+.container_sweetbox__img{
     background: url("../img/candies.jpg") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_5 h1, .container_12 h1{
+.container_sweetbox__img h1, .container_goals__img h1{
     font-family: Amatic SC, cursive;
     text-align: center;
     padding-top: 80px;
@@ -334,7 +334,7 @@ label #cancel{
     margin-bottom: 70px;
 }
 
-.container_6{
+.container_sweetbox{
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -343,34 +343,34 @@ label #cancel{
     border: 8px ridge #B0C4DE;
 }
 
-.container_7{
+.container_sweetbox__content{
     width: 100%;
     max-width: 575px;
     margin: 0 auto;
 }
 
-.container_8{
+.container_party__img{
     background: url("../img/blue_candy.jpg") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_10{
+.container_about__img{
     background: url("../img/candy2.jpg") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_12{
+.container_goals__img{
     background: url("../img/clients.jpg") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_8 p, .container_10 p, .container_22 p, .container_27 p{
+.container_party__img p, .container_about__img p, .container_profile p, .container_post p{
     font-family: Amatic SC, cursive;
     text-align: center;
     padding: 0 40px 60px;
@@ -378,7 +378,7 @@ label #cancel{
     margin: 0;
 }
 
-.container_9{
+.container_party{
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -387,7 +387,7 @@ label #cancel{
     background: #FFFACD	;
 }
 
-.container_11{
+.container_about{
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -396,7 +396,7 @@ label #cancel{
     background: #FFE4E1	;
 }
 
-.container_13{
+.container_goals{
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -406,28 +406,28 @@ label #cancel{
     background: #FFFFF0;
 }
 
-.container_14{
+.container_about_bottom_fixed_img{
     background: url("../img/fixed_back.jpg") 0 0 no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 400px;
 }
 
-.container_16{
+.container_about_middle_fixed_img{
     background: url("../img/fixed_back2.jpg") 0 0 no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 400px;
 }
 
-.container_17{
+.container_home_bottom_fixed_img{
     background: url("../img/fixed_back3.jpg") 0 0 no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 400px;
 }
 
-.container_18{
+.container_home_middle_fixed_img{
     background: url("../img/fixed_back4.jpg") 0 0 no-repeat fixed;
     background-size: cover;
     width: 100%;
@@ -505,27 +505,27 @@ button:hover{
 }
 
 
-.container_20
+.container_signin__content, .container_signup__content
 {
     max-width: 550px;
     margin: 40px auto;
     background-color: #FFF0F5;
 }
 
-.container_21
+.container_signin, .container_signup
 {
     margin-top: 150px;
     padding: 60px 10px;
 }
 
-.container_20 label{
+.container_signin__content label, .container_signup__content label{
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
     padding: 15px 0!important;
     display: block;
 }
 
-.container_20 input{
+.container_signin__content input, .container_signup__content input{
     margin-bottom: 10px;
 }
 
@@ -548,21 +548,21 @@ button:hover{
     padding: 20px;
 }
 
-.container_20 form{
+.container_signin__content form, .container_signup__content form{
     text-align: center;
 }
 
-.container_20 a{
+.container_signin__content a, .container_signup__content a{
     text-decoration: none;
     color: #6c606c;
 }
 
-.container_20 a:hover{
+.container_signin__content a:hover, .container_signup__content a:hover{
     text-decoration: none;
     color: midnightblue;
 }
 
-.container_20 p{
+.container_signin__content p, .container_signup__content p{
     margin: 0;
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
@@ -586,14 +586,14 @@ button:hover{
     background: #B0C4DE	;
 }
 
-.container_22{
+.container_profile{
     background: url("../img/gummy.jpg") 0 0 no-repeat;
     background-size: cover;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_23{
+.container_profile__content{
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -602,60 +602,60 @@ button:hover{
     background: #F0F8FF	;
 }
 
-.container_24{
+.container_profile_fixed_img{
     background: url("../img/hearts.jpg") 0 0 no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 400px;
 }
 
-.container_25{
+.container_blog{
     background: linear-gradient(#D3CCE3, #E9E4F0);
     width: 100%;
     padding-bottom: 60px;
 }
 
-.container_26{
+.container_blog__content{
     margin: 0 auto;
     width: 100%;
     max-width: 650px;
     height: 100%;
 }
 
-.container_26 a{
+.container_blog__content a{
     text-decoration: none;
     color: #483D8B;
 }
 
-.container_26 a:hover{
+.container_blog__content a:hover{
     text-decoration: none;
     color: #4B0082;
 }
 
-.container_26 h5{
+.container_blog__content h5{
     font-family: 'Amatic SC', cursive;
     font-size: 35px;
 }
 
-.container_26 p{
+.container_blog__content p{
     font-size: 20px;
 }
 
-.container_26 .img-fluid{
+.container_blog__content .img-fluid{
     height: 100%;
 }
 
-.container_26 .text-muted{
+.container_blog__content .text-muted{
     font-size: 16px;
 }
 
-.container_27{
+.container_post{
     background: #F5FFFA;
     width: 100%;
     padding: 60px 0;
 }
 
-.container_28{
+.container_post__content{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -664,32 +664,32 @@ button:hover{
 }
 
 
-.container_29{
+.container_comments{
     background: #F0F8FF;
     width: 100%;
     padding: 60px 0;
 }
 
-.comments_container{
+.container_comments__content{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-.comments_container h4{
+.container_comments__content h4{
     font-family: 'Amatic SC', cursive;
     font-size: 40px;
     padding-right: 20px;
 }
 
-.comments_container h5{
+.container_comments__content h5{
     font-family: 'Amatic SC', cursive;
     font-size: 23px;
     color: gray;
 }
 
-.comments_container p{
+.container_comments__content p{
     font-family: Amatic SC, cursive;
     font-size: 30px;
     padding-bottom: 40px;
@@ -706,7 +706,7 @@ input, textarea{
     border: 1px solid black;
 }
 
-.comments_container h1, .comments_container__add h1{
+.container_comments__content h1, .container_comments__add h1{
     text-align: center;
     padding-top: 80px;
     padding-bottom: 70px;
@@ -715,7 +715,7 @@ input, textarea{
     margin: 0;
 }
 
-.comments_container h3{
+.container_comments__content h3{
     font-family: Amatic SC, cursive;
     font-size: 30px;
     text-align: center;
@@ -724,7 +724,7 @@ input, textarea{
 }
 
 
-.comments_container__add{
+.container_comments__add{
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -732,21 +732,21 @@ input, textarea{
     padding: 0 30px;
 }
 
-.comments_container__add label{
+.container_comments__add label{
     font-family: 'Amatic SC', cursive;
     font-size: 28px;
     padding: 15px 20px!important;
     display: flex;
 }
 
-.comments_container__add input#id_name, input#id_username, input#id_password, input#id_password2, input#id_password1 {
+.container_comments__add input#id_name, input#id_username, input#id_password, input#id_password2, input#id_password1 {
     margin: 0 auto;
     width: 100%;
     max-width: 300px;
 
 }
 
-.comments_container__add input#id_name{
+.container_comments__add input#id_name{
     margin-left: 78px;
 }
 
@@ -754,7 +754,7 @@ input{
     min-height: 30px;
 }
 
-.comments_container__add textarea{
+.container_comments__add textarea{
     padding: 15px;
 }
 
@@ -808,25 +808,25 @@ input, optgroup, select, textarea {
         height: auto;
     }
 
-    #col1, #col3 {
+    #footer__top__col1, #footer__top__col3 {
         text-align: center;
     }
-    #col1, #col2, #col3{
+    #footer__top__col1, #footer__top__col2, #footer__top__col3{
         margin-bottom: 20px;
     }
 
-    .icons{
+    .footer__icons{
         display: block;
         max-width: 100%;
         margin: 0 auto;
         max-width: 100px;
     }
 
-    #col1{
+    #footer__top__col1{
         margin-top: 20px;
     }
 
-    #col2{
+    #footer__top__col2{
         border: none;
     }
 }
@@ -837,11 +837,11 @@ input, optgroup, select, textarea {
         display: block;
     }
 
-    .comments_container__add input#id_name {
+    .container_comments__add input#id_name {
         margin-left: 0;
     }
 
-    .comments_container__add label {
+    .container_comments__add label {
         text-align: center;
         display: block;
     }

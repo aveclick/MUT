@@ -1,15 +1,15 @@
 {% extends 'MUT_app/layout.html' %}
 {% block content %}
     <div class="container_0">
-        <div class="container_27">
-            <div class="container_28">
+        <div class="container_post">
+            <div class="container_post__content">
                 <h1>{{ post.title }}</h1>
                 <p>{{ post.body|safe }}</p>
             </div>
         </div>
     </div>
-    <div class="container_29">
-        <div class="comments_container">
+    <div class="container_comments">
+        <div class="container_comments__content">
             <h1>Комментарии</h1>
             {% for comment in post.comments.all %}
                 <div class="one_str">
@@ -23,8 +23,8 @@
             {% endfor %}
         </div>
     </div>
-    <div class="container_27">
-        <div class="comments_container__add">
+    <div class="container_post">
+        <div class="container_comments__add">
             <h1>Добавить комментарий</h1>
             <form method="post">
                 {% csrf_token %}
