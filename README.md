@@ -76,6 +76,9 @@
 
 
 # Установка
+
+## Запуск из PyCharm
+
 ```
 https://github.com/aveclick/MUT.git
 Называем папку с проектом "MUT"
