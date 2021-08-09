@@ -81,7 +81,6 @@
 
 ```
 https://github.com/aveclick/MUT.git
-Называем папку с проектом "MUT"
 Добавляем интерпретатор Python
 Открываем файл с базой данных двойным щелчком db.sqlite3
 pip install django
