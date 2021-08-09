@@ -32,9 +32,9 @@
 
 ![footer_1](/screenshots/footer_1.PNG)
 
-![menu_2](/screenshots/menu.PNG)
+![menu_2](/screenshots/menu__1.PNG)
 
-![menu_1](/screenshots/menu_1.PNG)
+![menu_1](/screenshots/menu__2.PNG)
 
 
 <a name="sign"><h2>Вход и регистрация + профиль</h2></a>
