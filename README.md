@@ -73,9 +73,14 @@ https://github.com/aveclick/MUT.git
 Называем папку с проектом "MUT"
 pip install django
 pip install Pillow
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 
 ```
+Акканут администратора создается командой python manage.py createsuperuser. Доступ к панели администратора осуществляется по адресу /admin.
+
+
 # Заключение
 Учебный проект для практики навыков работы с Django и адаптивной верстки.
 
