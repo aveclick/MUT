@@ -78,7 +78,7 @@ python manage.py migrate
 python manage.py runserver
 
 ```
-Акканут администратора создается командой python manage.py createsuperuser. Доступ к панели администратора осуществляется по адресу /admin.
+Акканут администратора создается командой python manage.py createsuperuser. Доступ к панели администратора осуществляется по адресу /admin. В проекте уже присутсвует пользователь с ником admin и паролем admin.
 
 
 # Заключение
