@@ -73,6 +73,7 @@ https://github.com/aveclick/MUT.git
 Называем папку с проектом "MUT"
 pip install django
 pip install Pillow
+python manage.py runserver
 
 ```
 # Заключение
