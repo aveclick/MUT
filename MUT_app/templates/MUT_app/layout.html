@@ -70,8 +70,13 @@
                 menu.classList.toggle('open');
                 btnMenuclose.classList.toggle('open');
                 btnMenu.classList.toggle('close');
-                const body = document.querySelector('body');
+                const body = document.querySelector('.container_0');
+                const footer1 = document.querySelector('.footer__top');
+                const footer2 = document.querySelector('.footer__bottom');
+
                 body.classList.toggle('change_background');
+                footer1.classList.toggle('change_background');
+                footer2.classList.toggle('change_background');
             }
 
             btnMenu.addEventListener('click', function (e) {
