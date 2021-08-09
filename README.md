@@ -32,7 +32,7 @@
 
 ![footer_1](/screenshots/footer_1.PNG)
 
-![menu](/screenshots/menu.PNG)
+![menu_2](/screenshots/menu.PNG)
 
 ![menu_1](/screenshots/menu_1.PNG)
 
