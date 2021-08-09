@@ -81,12 +81,12 @@
 
 ```
 https://github.com/aveclick/MUT.git
-Добавляем интерпретатор Python
+Добавляем интерпретатор Python (вирутальное окружение)
 Открываем файл с базой данных двойным щелчком db.sqlite3
 pip install django
 pip install Pillow
-python manage.py makemigrations
-python manage.py migrate
+python manage.py makemigrations (при необходиомсти)
+python manage.py migrate (при необходиомсти)
 python manage.py runserver
 
 ```
