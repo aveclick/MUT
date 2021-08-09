@@ -85,8 +85,8 @@ https://github.com/aveclick/MUT.git
 Открываем файл с базой данных двойным щелчком db.sqlite3
 pip install django
 pip install Pillow
-python manage.py makemigrations (при необходиомсти)
-python manage.py migrate (при необходиомсти)
+python manage.py makemigrations (при необходимости)
+python manage.py migrate (при необходимости)
 python manage.py runserver
 
 ```
